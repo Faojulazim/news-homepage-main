@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body class="font-Inter min-h-[100vh] grid md:place-content-center">
+    <div class="px-5 lg:px-20 xl:max-w-[1300px] mx-auto h-[100vh]">
+      <nav
+        class="flex items-center justify-between pt-7 pb-14 transition-all overflow-hidden"
+      >
+        <img
+          class="w-[50px] lg:w-[60px] cursor-pointer"
+          src="assets/images/logo.svg"
+          alt=""
+        />
+        <div class="md:hidden">
+          <img
+            class="w-[50px] relative right-0 transition-all duration-500 cursor-pointer"
+            src="assets/images/icon-menu.svg"
+            alt=""
+            id="menuIcon"
+          />
+        </div>
+        <ul class="hidden md:flex items-center gap-x-10 text-darkGrayishBlue">
+          <li class="hover:text-softRed transition-all cursor-pointer">Home</li>
+          <li class="hover:text-softRed transition-all cursor-pointer">New</li>
+          <li class="hover:text-softRed transition-all cursor-pointer">
+            Popular
+          </li>
+          <li class="hover:text-softRed transition-all cursor-pointer">
+            Trending
+          </li>
+          <li class="hover:text-softRed transition-all cursor-pointer">
+            Categories
+          </li>
+        </ul>
+        <div
+          class="md:hidden fixed right-0 top-0 h-[100vh] w-full px-5 pt-7 transition-all duration-500 right-[-100%]"
+          id="navDiv"
+        >
+          <div
+            class="w-[33%] bg-[hsl(240_100%_5%/.4)] z-10 absolute h-full top-0 left-0"
+          ></div>
+          <div
+            class="w-[67%] absolute right-0 top-0 h-full px-5 pt-7 bg-OffWhite"
+          >
+            <img
+              class="w-[30px] transition-all ml-auto cursor-pointer"
+              src="assets/images/icon-menu-close.svg"
+              alt=""
+              id="closeIcon"
+            />
+            <ul class="text-veryDarkBlue text-xl flex flex-col gap-y-4 pt-20">
+              <li class="hover:text-softRed trans ition-all cursor-pointer">
+                Home
+              </li>
+              <li class="hover:text-softRed transition-all cursor-pointer">
+                New
+              </li>
+              <li class="hover:text-softRed transition-all cursor-pointer">
+                Popular
+              </li>
+              <li class="hover:text-softRed transition-all cursor-pointer">
+                Trending
+              </li>
+              <li class="hover:text-softRed transition-all cursor-pointer">
+                Categories
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="grid md:grid-cols-[repeat(7,minmax(80px,1fr))] gap-x-5 lg:gap-x-7 xl:grid-cols-[repeat(9,minmax(100px,1fr))]"
+      >
+        <div class="grid md:col-[1_/_5] md:gap-y-8 xl:col-[1_/_7]">
+          <img
+            class="object-cover w-full h-full md:hidden"
+            src="assets/images/image-web-3-mobile.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover md:self-start w-full md:h-full hidden md:flex"
+            src="assets/images/image-web-3-desktop.jpg"
+            alt=""
+          />
+
+          <div
+            class="grid md:grid-cols-[repeat(2,minmax(100px,1fr))] gap-x-7 lg:gap-x-8"
+          >
+            <div class="py-5 md:py-0">
+              <h1
+                class="text-veryDarkBlue text-[2.7rem] leading-none font-[800] md:h-full flex lg:text-[3.4rem]"
+              >
+                The Bright Future of Web 3.0?
+              </h1>
+            </div>
+            <div class="md:flex md:flex-col md:justify-between md:items-start">
+              <p class="text-[15px] text-darkGrayishBlue font-[400]">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="uppercase text-veryDarkBlue tracking-[4px] bg-softRed font-[700] px-8 py-2 md:px-4 mt-5 md:mt-7 hover:bg-veryDarkBlue hover:text-OffWhite transition-all cursor-pointer"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-veryDarkBlue md:self-start px-5 py-5 mt-16 md:col-[5_/_8] md:h-full md:place-content-center md:mt-0 xl:col-[7_/_10]"
+        >
+          <div>
+            <h1
+              class="text-softOrange text-4xl font-[700] md:text-3xl mb-5 lg:mb-7"
+            >
+              New
+            </h1>
+          </div>
+          <div>
+            <div>
+              <h1
+                class="text-white text-xl md:text-lg lg:text-xl font-[700] pb-2 hover:text-softOrange transition-all"
+              >
+                Hydrogen VS Electric Cars
+              </h1>
+              <p class="text-grayishBlue text-[15px]">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div
+              class="w-full h-[1px] bg-darkGrayishBlue my-7 md:my-5 lg:my-7"
+            ></div>
+            <div>
+              <h1
+                class="text-white text-xl md:text-lg font-[700] pb-2 lg:text-xl hover:text-softOrange transition-all"
+              >
+                The Downsides of AI Artistry
+              </h1>
+              <p class="text-grayishBlue text-[15px]">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div
+              class="w-full h-[1px] bg-darkGrayishBlue my-7 md:my-5 lg:my-7"
+            ></div>
+            <div>
+              <h1
+                class="lg:text-xl text-white text-xl md:text-lg font-[700] pb-2 hover:text-softOrange transition-all"
+              >
+                Is VC Funding Drying Up?
+              </h1>
+              <p class="text-grayishBlue text-[15px]">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="py-16 gap-y-10 grid lg:grid-cols-[repeat(3,minmax(150px,1fr))] xl:gap-x-8"
+      >
+        <div class="flex gap-x-5 md:items-center lg:max-w-[400px]">
+          <img
+            class="w-[100px] md:w-[110px]"
+            src="assets/images/image-retro-pcs.jpg"
+            alt=""
+          />
+          <div class="flex flex-col gap-x-5 justify-between h-full items-start">
+            <h1
+              class="text-softRed font-[800] text-2xl leading-none lg:text-3xl"
+            >
+              01
+            </h1>
+            <h2
+              class="text-veryDarkBlue font-[800] text-md leading-none lg:text-lg lg:leading-6 hover:text-softRed transition-all"
+            >
+              Reviving Retro PCs
+            </h2>
+            <p
+              class="text-darkGrayishBlue text-[15px] md:leading-5 lg:leading-6"
+            >
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-x-5 md:items-center">
+          <img
+            class="w-[100px] md:w-[110px]"
+            src="assets/images/image-top-laptops.jpg"
+            alt=""
+          />
+          <div class="flex flex-col justify-between h-full items-start">
+            <h1
+              class="text-softRed text-2xl font-[800] leading-none lg:text-3xl"
+            >
+              02
+            </h1>
+            <h2
+              class="text-veryDarkBlue font-[800] text-md leading-none lg:text-lg lg:leading-6 hover:text-softRed transition-all"
+            >
+              Top 10 Laptops of 2022
+            </h2>
+            <p
+              class="text-darkGrayishBlue text-[15px] md:leading-5 lg:leading-6"
+            >
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-x-5 md:items-center">
+          <img
+            class="w-[100px] md:w-[110px]"
+            src="assets/images/image-gaming-growth.jpg"
+            alt=""
+          />
+          <div class="flex flex-col justify-between h-full items-start">
+            <h1 class="text-softRed text-2xl font-[800] lg:text-3xl">03</h1>
+            <h2
+              class="text-veryDarkBlue font-[800] text-md leading-none lg:text-lg lg:leading-6 hover:text-softRed transition-all"
+            >
+              The Growth of Gaming
+            </h2>
+            <p
+              class="text-darkGrayishBlue text-[15px] md:leading-5 lg:leading-6"
+            >
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
